@@ -72,7 +72,7 @@ const Home = () => {
           {" "}
           Furniture{" "}
         </button>
-        <div className="search flex justify-around items-center md:w-1/3 my-2 md:my-0">
+        <div className="search grid-cols-2 gap-1 flex justify-around items-center md:w-1/3 font-medium">
           <input
             value={query}
             onChange={(e) => {
@@ -80,7 +80,7 @@ const Home = () => {
             }}
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs bg-[#75e1bd] rounded-lg"
+            className="input w-full bg-neutral-200/70 rounded-md flex items-center font-medium"
           />
           <button
             className="btn btn-outline btn-active btn-accent m-2 text-base"
@@ -108,7 +108,7 @@ const Home = () => {
           Beauty{" "}
         </button>
       </div>
-      <div className=" flex justify-around flex-wrap  ">
+      <div className=" flex justify-around flex-wrap bg-slate-500 ">
         {products == null ? (
           <ShimmerUI></ShimmerUI>
         ) : (
