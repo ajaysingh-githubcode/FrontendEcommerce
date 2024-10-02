@@ -29,20 +29,19 @@ let lightTheme = "card bg-gray-300 w-96 shadow-xl m-2 text-black"
 
 return (
 
-// <div className="card bg-slate-500 w-96 shadow-xl m-4" onClick={handleNavigation}>
 <div className={theme =="light" ? lightTheme : darkTheme} onClick={handleNavigation}>
-<figure>
+<figure className="outline outline-none w-fit h-fit px-11 py-8 bg-emerald-400">
 <img
-    className={theme == "light" ? "bg-white rounded-xl mt-2"  : "bg-slate-700 rounded-xl mt-2"}
+    className={theme == " light" ? "bg-white rounded-xl mt-1" : "bg-slate-700 rounded-xl mt-1"}
     src={thumbnail}
     alt="Shoes"
 />
 </figure>
-<div className="card-body">
-    <h2 className="card-title">{title}</h2>
-    <p> Category {category} </p>
-    <p> Price {price} </p>
-    <p> Rating {rating} </p>
+<div className="card-body bg-rose-300">
+    <h2 className="card-title hover:bg-emerald-500 w-fit">{title}</h2>
+    <p className="outline outline-none w-fit hover:bg-blue-500"> Category {category} </p>
+    <p className="outline outline-none w-fit hover:bg-blue-500"> Price {price} </p>
+    <p className="outline outline-none w-fit hover:bg-blue-500"> Rating {rating} </p>
     <div className="card-actions justify-end">
     <button className="btn btn-accent" onClick={handleAddCart}>Add to Cart</button>
     </div>
