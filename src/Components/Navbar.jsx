@@ -12,34 +12,33 @@ const Navbar = () => {
   let lightTheme = "navbar bg-white text-black text-2xl h-20";
   let darkTheme = "navbar bg-gray-700 text-primary-content text-2xl h-20";
   
-
   let themeChange = ()=>{
     setTheme(theme =="light" ? "dark" : "light")
   }
+  
   return (
-    // <div className={theme == "light" ? lightTheme : darkTheme}>
-    <div className={theme == "dark" ? darkTheme : lightTheme}>
-      <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-2xl text-orange-400">
+     <div className={theme == "dark" ? darkTheme : lightTheme}>
+     <div className="flex-1">
+        <Link to="/" className="btn btn-ghost text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
           Just Buy {" "}
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 ">
+        <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/food" className="text-2xl text-orange-400">
+            <Link to="/food" className="text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
               {" "}
               Food{" "}
             </Link>
           </li>
           <li>
-            <Link to="/profile" className="text-2xl text-orange-400">
+            <Link to="/profile" className="text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
               {" "}
               Profile{" "}
             </Link>
           </li>
           <li>
-            <Link to="/cart" className="text-2xl text-orange-400">
+            <Link to="/cart" className="text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
               {" "}
               Cart<sup> {cartData.length} </sup>
             </Link>
