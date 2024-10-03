@@ -19,9 +19,9 @@ const Navbar = () => {
   return (
      <div className={theme == "dark" ? darkTheme : lightTheme}>
      <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
+        <a href="/" className="btn btn-ghost text-2xl text-orange-400 hover:bg-neutral-600 w-fit">
           Just Buy {" "}
-        </Link>
+        </a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
